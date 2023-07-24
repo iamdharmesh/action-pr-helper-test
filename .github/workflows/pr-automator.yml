@@ -1,5 +1,6 @@
 name: 'PR Automator'
 on:
+  push:
   pull_request:
     types:
       - opened
@@ -20,3 +21,4 @@ jobs:
           reviewer: iamdharmesh
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
