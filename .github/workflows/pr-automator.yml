@@ -16,7 +16,7 @@ jobs:
   Validate:
     runs-on: ubuntu-latest
     steps:
-      - uses: 10up/action-pr-automator@enhancement/52
+      - uses: 10up/action-pr-automator@dependabot/npm_and_yarn/actions/core-1.10.1
         with:
           fail-label: needs:feedback
           pass-label: needs:code-review
