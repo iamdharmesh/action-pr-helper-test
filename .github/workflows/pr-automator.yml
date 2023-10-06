@@ -16,7 +16,7 @@ jobs:
   Validate:
     runs-on: ubuntu-latest
     steps:
-      - uses: 10up/action-pr-automator@dependabot/npm_and_yarn/octokit/action-6.0.6
+      - uses: 10up/action-pr-automator@fix/97
         with:
           fail-label: needs:feedback
           pass-label: needs:code-review
