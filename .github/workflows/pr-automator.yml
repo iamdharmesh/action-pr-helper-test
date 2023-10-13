@@ -1,5 +1,8 @@
-name: 'PR Automator'
+name: 'Repo Automator'
 on:
+  push:
+    branches:
+      - develop
   pull_request:
     types:
       - opened
@@ -18,6 +21,6 @@ jobs:
           fail-label: needs:feedback
           pass-label: needs:code-review
           reviewer: iamdharmesh
+          sync-pr-branch: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          
