@@ -3,7 +3,9 @@ name: Props Bot
 on:
   # Gathers all participants for pull requests to assist in giving proper credit.
   pull_request:
+  issue_comment:
   pull_request_review:
+  pull_request_review_comment:
 
 # Cancels all previous workflow runs for pull requests that have not completed.
 concurrency:
