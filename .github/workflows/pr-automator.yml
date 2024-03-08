@@ -16,7 +16,7 @@ jobs:
   Validate:
     runs-on: ubuntu-latest
     steps:
-      - uses: 10up/action-repo-automator@fix/code-scanning-alerts
+      - uses: 10up/action-repo-automator@dependabot/npm_and_yarn/undici-5.28.3
         with:
           fail-label: needs:feedback
           pass-label: needs:code-review
