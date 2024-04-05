@@ -16,7 +16,7 @@ jobs:
   Validate:
     runs-on: ubuntu-latest
     steps:
-      - uses: 10up/action-repo-automator@experiments
+      - uses: 10up/action-repo-automator@dependabot/npm_and_yarn/npm_and_yarn-f588956305
         with:
           fail-label: needs:feedback
           pass-label: needs:code-review
